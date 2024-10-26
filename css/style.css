@@ -1,0 +1,913 @@
+
+/*** Spinner Start ***/
+
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .8s ease-out, visibility 0s linear .0s;
+    visibility: visible;
+    opacity: 1;
+}
+body{
+    font-family: 'Poppins', sans-serif !important;  
+
+    
+}
+
+.wow,
+.animated {
+    animation-duration: 2s !important;
+}
+
+/*** Spinner End ***/
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+.back-to-top:hover {
+    background: var(--bs-dark);
+    color: var(--bs-primary);
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+    font-weight: 100 !important;
+    font-family: 'Open', sans-serif !important;
+}
+
+h4, h5, h6, .h4, .h5, .h6 {
+    font-weight: 600 !important;
+    font-family: 'Open', sans-serif !important;
+}
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+
+/*** Button Start ***/
+
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-md-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-lg-square {
+    width: 58px;
+    height: 58px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.btn.btn-primary:hover {
+    color: var(--bs-primary) !important;
+    background: var(--bs-dark) !important;
+    border-color: var(--bs-dark) !important;
+}
+
+.btn.btn-dark:hover {
+    color: var(--bs-dark) !important;
+    background: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
+/*** Button End ***/
+
+
+/*** Topbar Start ***/
+.topbar .topbar-inner {
+    height: 45px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, .5);
+}
+
+/* .topbar a,
+.topbar a i {
+    transition: 0.5s;
+} */
+
+.topbar a:hover,
+.topbar a i:hover {
+    color: var(--bs-primary) !important;
+}
+/*** Topbar End ***/
+
+
+/*** Navbar Start ***/
+/* .fixed-top {
+    transition: .5s;
+} */
+
+.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 12px;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    /* transition: .5s; */
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.fixed-top.bg-white .navbar .navbar-nav .nav-link:hover,
+.fixed-top.bg-white .navbar .navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (min-width: 992px) {
+    .hero-header {
+        margin-top: 0rem;
+    }
+    .navbar-collapse {
+        background: transparent !important;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        border: 0;
+        /* transition: .5s; */
+        opacity: 0;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transform: rotateX(0deg);
+        visibility: visible;
+        background: var(--bs-light) !important;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+.navbar-toggler {
+    background: var(--bs-secondary);
+    color: #000 !important;
+    padding: 10px 20px;
+    border: 2px solid gray !important;
+    box-shadow: none !important;
+}
+/*** Navbar End ***/
+
+
+/*** Hero Header ***/
+.hero-header {
+    margin-top: 5rem;
+    height: 40rem !important;
+    padding-top: 15rem;
+    padding-bottom: 6rem;
+    background: url("https://img.freepik.com/premium-photo/serene-alfalfa-fields-with-distant-tractor-professional-nature-photography_1143378-6328.jpg"), center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    /* height: 94.8vh; */
+
+    
+    
+    /* height: calc(100vh); */
+    /* z-index: 1; */
+    
+
+
+}
+
+
+/* Services-image scc start */
+.services-image {
+    padding-top: 22rem;
+    padding-bottom: 6rem;
+    background: url("https://media.istockphoto.com/id/1346744481/photo/anonymous-chef-harvesting-fresh-vegetables-on-a-farm.jpg?s=612x612&w=0&k=20&c=U9h4fAi68nwVndAJW8TF-f2lFFCO2Y-XrZWA2gah1Xw="), center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.services-image1 {
+    padding-top: 22rem;
+    padding-bottom: 6rem;
+    background: url("https://png.pngtree.com/thumb_back/fh260/background/20210906/pngtree-tea-tea-garden-green-and-fresh-image_805407.jpg"), center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.services-image2 {
+    padding-top: 22rem;
+    padding-bottom: 6rem;
+    background: url("https://media.istockphoto.com/id/1092520698/photo/indian-farmer-at-onion-field.jpg?s=612x612&w=0&k=20&c=gvu-DzA17EyVSNzvdf7L3R8q0iIvLapG15ktOimqXqU="), center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.services-image3 {
+    padding-top: 22rem;
+    padding-bottom: 6rem;
+    background: url("https://projectblue.blob.core.windows.net/media/Default/Homepage%20and%20misc%20signposts/homepage%20header_v2.jpg"), center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+.services-image4 {
+    padding-top: 22rem;
+    padding-bottom: 6rem;
+    background: url("https://t4.ftcdn.net/jpg/08/21/82/59/360_F_821825947_DgNrMiCYPFB9hsffE0evMWM9qP4a86jk.jpg"), center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+.services-image5 {   
+    padding-top: 22rem;
+    padding-bottom: 6rem;
+    background: url("../img/carbonsecond.jpeg"), center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+/* Service-image end */
+
+
+.mtText {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    width: 950px;
+}
+.myMain {
+    font-weight: 600;
+    color: #fff;
+    font-size: 2.4rem !important;
+    width: 950px;
+    /* font-size: 30px !important; */
+}
+.hero-header .hero-header-inner {
+    padding: 3rem;
+    /* background: rgba(255, 255, 255, 0.651); */
+    position: relative;
+    border-radius: 8px;
+    /* box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3); */
+    top: -43px;
+    
+}
+
+@media (max-width: 992px) {
+    .hero-header {
+        padding-top: 12rem;
+    }
+}
+
+.hero-header .breadcrumb-item {
+    font-size: 18px;
+}
+/*** Hero Header ***/
+
+
+/*** About Start ***/
+.about a.btn.btn-light:hover {
+    background: var(--bs-dark) !important;
+    color: var(--bs-primary) !important;
+    border: 0;
+}
+/*** About End ***/
+
+
+/*** Activities Start ***/
+.activities .activities-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 45px rgba(12, 18, 20, .08);
+    transition: 0.5s;
+}
+
+.activities .activities-item:hover {
+    background: var(--bs-primary) !important;
+    color: var(--bs-dark) !important;
+}
+
+.activities .activities-item:hover a {
+    background: var(--bs-light) !important;
+    color: var(--bs-dark) !important;
+}
+
+.activities .activities-item:hover a:hover {
+    background: var(--bs-dark) !important;
+    color: var(--bs-primary) !important;
+}
+/*** Activities End ***/
+
+
+/*** Events Start ***/
+.event-item img {
+    transition: 0.5s;
+}
+
+.event .event-item a {
+    transition: 0.5s;
+}
+
+.event-item:hover img {
+    transition: 0.5s;
+    transform: scale(1.2)
+}
+
+.event-item a:hover {
+    background: var(--bs-dark);
+    color: var(--bs-primary);
+    opacity: 0.5s;
+}
+/*** Events End ***/
+
+
+/*** Sermon Start ***/
+.sermon .sermon-item {
+    height: 100%;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.sermon-item img {
+    transition: 0.5s;
+}
+
+.sermon-item:hover img {
+    transform: scale(1.2)
+}
+
+.sermon-item .sermon-meta a,
+.sermon-item .sermon-meta a i {
+    transition: 0.5s;
+}
+
+.sermon-item .sermon-meta a:hover,
+.sermon-item .sermon-meta a i:hover {
+    color: var(--bs-primary) !important;
+}
+/*** Sermon End ***/
+
+
+/*** Blog Start ***/
+.blog-item {
+    height: 100%;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.blog-item img {
+    transition: 0.5s;
+}
+
+.blog-item:hover img {
+    transform: scale(1.2)
+}
+
+.blog-item .blog-meta a,
+.blog-item .blog-meta a i {
+    transition: 0.5s;
+}
+
+.blog-item .blog-meta a:hover,
+.blog-item .blog-meta a i:hover {
+    color: var(--bs-primary) !important;
+}
+/*** Blog End ***/
+
+
+/*** Team Start ***/
+.team .team-img {
+    height: 100%;
+    padding: 25px;
+    background: var(--bs-white);
+    overflow: hidden;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.team .team-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team .team-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.team .team-item img {
+    transition: 0.5s;
+}
+
+.team .team-item:hover img {
+    transform: scale(1.2);
+}
+
+.team .team-item .team-content {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   padding: 15px;
+   transform: translateX(-50%, -50%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   transition: 0.5s;
+}
+
+.team .team-item:hover .team-content {
+    opacity: 1;
+    background: rgba(241, 193, 82, .7);
+}
+/*** Team End ***/
+
+
+/*** testimonial Start ***/
+.testimonial-item {
+    background: var(--bs-light);
+    padding: 40px;
+}
+
+.testimonial-carousel .owl-item img {
+    width: 143px;
+    height: 100px;
+}
+
+.testimonial-carousel {
+    position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 46px;
+    height: 40px;
+   
+    font-size: 22px;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    transition: .5s;
+    border-radius:11px;
+
+    background: var(--bs-dark) !important;
+    color: var(--bs-primary) !important;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover {
+    background: var(--bs-primary) !important;
+    color: var(--bs-dark) !important;
+}
+
+.testimonial-carousel .owl-nav .owl-next {
+    left: auto;
+    right: 0px;
+}
+
+.testimonial-carousel .owl-nav .owl-next:hover {
+    background: var(--bs-primary) !important;
+    color: var(--bs-dark) !important;
+}
+/*** testimonial End ***/
+
+
+/*** Footer Start ***/
+.footer {
+    margin-top: 6rem;
+    background: var(--bs-dark);
+}
+
+.footer .footer-item p {
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.footer .border-top,
+.footer .border-bottom {
+    border-color: rgba(255, 255, 255, .08) !important;
+}
+
+.footer button {
+    border: 0;
+    transition: 0.5s;
+}
+
+.footer button:hover {
+    background: var(--bs-dark);
+    color: var(--bs-primary);
+}
+
+.footer-item a.btn.btn-light:hover {
+    background: var(--bs-primary);
+    color: var(--bs-dark) !important;
+    border: var(--bs-primary);
+}
+
+.footer-item a,
+.footer-item a i {
+    transition: 0.5s;
+}
+
+.footer-item a:hover,
+.footer-item a i:hover {
+    color: var(--bs-primary) !important;
+}
+/*** Footer End ***/
+
+ 
+.mysmall-box{
+    width: 5.5%;
+}
+
+
+
+.youaresecond{
+    width: 60%;
+}
+
+
+
+/* .myservisepics{
+    width: 30px;
+    height: 275px; */
+/* } */
+.yoursecondboximg{
+    width: 25vw;
+    height: auto;
+}
+
+.sixth-heading45{
+    margin-top: 130px;
+    margin-bottom: 40px;
+    
+    text-align: center;
+    font-size: 60px;
+    
+    color: black;
+}
+
+.fifth-portion p{
+     color: black;
+}
+
+.bio-data2{
+    text-align: justify;
+}
+
+
+.pristineplanetlogo{
+    width: 82px;
+    height: 74px;
+    position: absolute;
+    top: 0px;
+}
+
+
+.leaveplanet{
+    font-size: 74px;
+    color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .hero-header {
+        margin-top: 0rem;
+    }
+    .nav-link{
+        font-size: 14px;
+    }
+
+    .nav-link:hover{
+        font-size: 14px;
+    }
+
+    .navbar-brand{
+        font-size: 20px;
+    }
+
+    .sixth-heading45{
+        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .fifth-portion p{
+        font-size: 14px;
+        text-align: justify;
+    }
+    .py-3 {
+        padding: 0rem !important;
+        padding-bottom: 10px !important;
+    }
+    .leaveplanet{
+        font-size: 40px;
+    }
+
+    .mysmall-box{
+        width: 10%;
+    }
+
+    .youaresecond{
+        width: 90%;
+    }
+
+    .yoursecondboximg{
+        width: 100%;
+    }
+
+    .footer-item a{
+        font-size: 10px;
+    }
+
+    .first-portion h2{
+        font-size: 28px;
+    }
+
+    .first-portion p{
+        font-size: 14px;
+    }
+
+    .second-portion h2{
+        font-size: 28px;
+    }
+
+    .second-portion p{
+        font-size: 14px;
+    }
+
+    .third-portion h2{
+        font-size: 28px;
+    }
+
+    .third-portion p{
+        font-size: 14px;
+    }
+
+    .fourth-portion h2{
+        font-size: 28px;
+    }
+
+    .fourth-portion p{
+        font-size: 14px;
+    }
+
+    .pristineplanetlogo{
+        width: 67px;
+        height: 55px;
+    }
+
+    .first-portion h1{
+        font-size: 40px;
+    }
+
+    .second-portion h1{
+        font-size: 40px;
+    }
+
+    .third-portion h1{
+        font-size: 40px;
+    }
+
+    .fourth-portion h1{
+        font-size: 40px;
+    }
+
+    .fifth-portion h1{
+        font-size: 40px;
+    }
+
+    .sixth-portion h1{
+        font-size: 40px;
+    }
+
+}
+
+
+
+.ninth-side{
+    display: flex;
+}
+
+.side-image-us{
+    background: url("../img/About-us-picfinal.jpeg");
+    /* width: 1150px;
+    height: 420px; */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 0px 0px 0px 20px;
+    
+}
+.twelfve{
+    display: grid;
+   grid-template-columns: auto 440px;
+   gap: 20px;
+    
+}
+.line-up{
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: justify;
+}
+.whatapp-icon{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.miniwhats{
+    
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 1000;
+
+    font-size: 40px;
+    width: 40px;
+    height: 30px;
+    font-weight: 500;
+}
+.newCssFixed {
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.15) 
+}
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .sectors {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .sectors h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .sector-list {
+    margin-bottom: 47px !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .sector-item {
+    /* background-color: #f9f9f9; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .sector-service-item {
+    /* background-color: #f9f9f9; */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .sector-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .sector-item img {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .sector-item h2 {
+    
+    font-size: 1.7rem;
+    color: #0A173E;
+    margin-bottom: 10px;
+  }
+  
+  .sector-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  /* service item */
+
+
+  .sector-service-item img {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .sector-service-item h2 {
+    
+    font-size: 1.8rem;
+    color: #0A173E;
+    margin-bottom: 10px;
+  }
+  
+  .sector-service-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sectors h1 {
+      font-size: 2rem;
+    }
+    
+    .sector-item h2 {
+      font-size: 1.25rem;
+    }
+    
+    .sector-item p {
+      font-size: 0.9rem;
+    }
+  }
+  
+.myGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.myGridFooter {
+    display: grid;
+    grid-template-columns: 460px 460px 460px;
+    gap: 20px;
+}
